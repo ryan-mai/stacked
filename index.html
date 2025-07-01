@@ -8,6 +8,20 @@
   </head>
   <body>
     <canvas class="game"></canvas>
+    
+    <!-- Start Screen UI -->
+    <div id="startScreen" class="start-screen">
+      <div class="logo-container">
+        <img src="/logo.png" alt="Logo" class="logo-image" />
+      </div>
+      <button id="playButton" class="play-button">PLAY</button>
+    </div>
+    
+    <!-- Game UI -->
+    <div id="gameUI" class="game-ui hidden">
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
