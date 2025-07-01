@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stacked-game
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+    healthCheckPath: /
