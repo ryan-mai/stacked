@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build", 
     "preview": "vite preview",
-    "start": "vite preview --port $PORT --host 0.0.0.0",
+    "start": "vite preview --host 0.0.0.0 --port $PORT",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
